@@ -1,10 +1,15 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+// @import url(css);
 :root {
     --ion-color-primary: #19ad9f;
     --ion-color-second-primary: #f8931d;
     --ion-color-third-primary: #141D38;
     --ion-color-white: #ffffff;
+    --ion-color-black: #000000;
     --ion-color-primary-rgb: 25, 173, 159;
   }
   
