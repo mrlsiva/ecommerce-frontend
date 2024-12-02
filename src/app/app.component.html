@@ -1,0 +1,62 @@
+<ion-app >
+  <ion-header *ngIf="isWeb">
+    <ion-toolbar color="primary">
+      <ion-title>My App</ion-title>
+      <ion-buttons slot="end">
+        <ion-button routerLink="/home">Home</ion-button>
+        <ion-button routerLink="/about">About</ion-button>
+        <ion-button routerLink="/contact">Contact</ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-router-outlet id="main-content" ></ion-router-outlet>
+  <ion-footer *ngIf="isMobile">
+  <div class="bottom-nav">
+    <a href="/home">Home</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+  </div>
+</ion-footer>
+  <!-- <ion-footer *ngIf="isMobile">
+    <ion-toolbar>
+      <ion-tabs>
+        
+        <ion-tab-bar slot="bottom">
+          <ion-tab-button tab="home">
+            <ion-icon name="home"></ion-icon>
+            <ion-label>Home</ion-label>
+          </ion-tab-button>
+          <ion-tab-button tab="settings">
+            <ion-icon name="settings"></ion-icon>
+            <ion-label>Settings</ion-label>
+          </ion-tab-button>
+          <ion-tab-button tab="profile">
+            <ion-icon name="person"></ion-icon>
+            <ion-label>Profile</ion-label>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+    </ion-toolbar>
+  </ion-footer> -->
+</ion-app>
+<!-- <ion-tabs *ngIf="isMobile">
+  <ion-router-outlet></ion-router-outlet>
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="search">
+      <ion-icon name="search"></ion-icon>
+      <ion-label>Search</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="settings">
+      <ion-icon name="settings"></ion-icon>
+      <ion-label>Settings</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs> -->

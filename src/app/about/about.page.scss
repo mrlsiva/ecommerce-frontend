@@ -1,0 +1,26 @@
+ion-header {
+    --background: var(--ion-color-third-primary);
+  }
+  
+  ion-content {
+    --background: var(--ion-color-white);
+  }
+  
+  ion-card {
+    margin: 15px;
+  }
+  
+//   ion-card-header {
+//     background-color: var(--ion-color-third-primary);
+//     color: var(--ion-color-white);
+//   }
+  
+  ion-card-content {
+    font-size: 16px;
+    color: var(--ion-color-third-primary);
+  }
+  
+  ion-item {
+    margin: 10px 0;
+  }
+  
