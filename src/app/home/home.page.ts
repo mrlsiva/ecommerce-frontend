@@ -11,7 +11,23 @@ export class HomePage implements OnInit {
   actors: Actor[] = [];
   currentPage = 1;
   totalPages = 1;
-
+  slides = [
+    {
+      title: 'Welcome to Akroganiq Farms',
+      subtitle: 'Experience nature at its best.',
+      image: 'assets/images/farm1.jpg',
+    },
+    {
+      title: 'Fresh Produce',
+      subtitle: 'Organic and naturally grown.',
+      image: 'assets/images/farm2.jpg',
+    },
+    {
+      title: 'Sustainable Farming',
+      subtitle: 'Nurturing the land for the future.',
+      image: 'assets/images/farm3.jpg',
+    },
+  ];
   constructor(private apiService: ApiService) {}
 
   ngOnInit() {
