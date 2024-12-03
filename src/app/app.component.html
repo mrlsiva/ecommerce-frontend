@@ -1,21 +1,22 @@
 <ion-app >
   <ion-header *ngIf="isWeb">
     <ion-toolbar>
-      <ion-title>My App</ion-title>
+      <ion-title><ion-img class="logo-img" src="../../assets/icon/logo.png" alt="T Sattai Logo" ></ion-img></ion-title>
       <ion-buttons slot="end">
         <ion-button routerLink="/home">Home</ion-button>
         <ion-button routerLink="/about">About</ion-button>
         <ion-button routerLink="/contact">Contact</ion-button>
+        <ion-button routerLink="/signin">Logout</ion-button>
       </ion-buttons>
     </ion-toolbar>
   </ion-header>
-
   <ion-router-outlet id="main-content" ></ion-router-outlet>
   <ion-footer *ngIf="isMobile">
   <div class="bottom-nav">
     <a href="/home">Home</a>
     <a href="/about">About</a>
     <a href="/contact">Contact</a>
+    <a href="/signin">Logout</a>
   </div>
 </ion-footer>
   <!-- <ion-footer *ngIf="isMobile">

@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>signin</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">signin</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list>
+    <ion-item>
+      <ion-input labelPlacement="floating" value="">
+        <div slot="label">User Name <ion-text color="danger">(Required)</ion-text></div>
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input labelPlacement="floating" value="">
+        <div slot="label">Password <ion-text color="danger">(Required)</ion-text></div>
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-button fill="outline">Sign up</ion-button>
+<ion-button fill="solid" id="open-loading" routerLink="/home">Sign in</ion-button>
+<!-- <ion-button >Show Loading</ion-button> -->
+<ion-loading trigger="open-loading" message="Progress..." duration="2000" spinner="circles"></ion-loading>
+    </ion-item>
+  </ion-list>
+</ion-content>

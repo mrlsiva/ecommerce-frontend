@@ -20,3 +20,12 @@ ionic serve
 
 ionic build --prod
 
+<!-- .htaccess -->
+<!-- <IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^.*$ /index.html [L]
+</IfModule> -->
+
+
